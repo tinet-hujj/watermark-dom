@@ -3,21 +3,19 @@
   "version": "2.3.0",
   "description": "watermark for DOM",
   "keywords": [
-    "watermark", "watermark-dom"
+    "watermark",
+    "watermark-dom"
   ],
   "main": "watermark.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "uglifyjs watermark.js --compress --mangle --output watermark.min.js"
   },
-  "optionalDependencies": {},
   "readme": "使用手册https://github.com/saucxs/watermark-dom/blob/master/README.md",
   "readmeFilename": "README.md",
   "author": "https://github.com/saucxs",
   "license": "ISC",
   "dependencies": {
-
-  },
-  "devDependencies": {
-
+    "html2canvas": "^1.4.1"
   }
 }
